@@ -1,6 +1,5 @@
 ﻿
 string day = Console.ReadLine();
-string month = "January";
 
 switch (day)
 {

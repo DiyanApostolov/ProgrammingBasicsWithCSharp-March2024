@@ -6,16 +6,24 @@ double commission = 0;
 switch (city)
 {
     case "Sofia":
-        if (sales < 0)
-            Console.WriteLine("error");
-        else if (sales >= 0 && sales <= 500)
-            commission = 5;
-        else if (sales > 500 && sales <= 1000) 
-            commission = 7;
-        else if (sales > 1000 && sales <= 10000)
-            commission = 8;
-        else if (sales > 10000)
-            commission = 12;
+        switch (sales)
+        {
+            case >= 0 and <= 500:
+                commission = 5;
+                break;
+            case > 500 and <= 1000:
+                commission = 7;
+                break;
+            case > 1000 and <= 10000:
+                commission = 8;
+                break;
+            case > 10000:
+                commission = 12;
+                break;
+            default:
+                Console.WriteLine("error");
+                break;
+        }
         break;
     case "Varna":
         if (sales < 0)
