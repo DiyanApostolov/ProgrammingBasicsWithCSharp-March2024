@@ -27,7 +27,7 @@ while (clas <= 12)
     sumAllGrades += currentGrade;
 }
 
-if (clas >= 12)
+if (clas == 13)
 {
     double averageGrade = sumAllGrades / 12;
     Console.WriteLine($"{name} graduated. Average grade: {averageGrade:F2}");
